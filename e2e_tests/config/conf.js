@@ -20,10 +20,16 @@ exports.config = {
 	rootElement: "[ng-app]",
 	onPrepare:function(){
 		browser.ignoreSynchronization = true;
-		jasmine.getEnv().addReporter(new HtmlReporter({
-			baseDirectory: 'tmp/screenshots'
+
+		var suiteName;
+	 	browser.getProcessedConfig().then(function(config){ 
+			suiteName=config.suite;
+	 		}).then(function(){
+			jasmine.getEnv().addReporter(new HtmlReporter({
+			baseDirectory: suiteName+'/screenshots'
 			, preserveDirectory: false
 		 }).getJasmine2Reporter());
+	 	});
 	},
   jasmineNodeOpts: {
     defaultTimeoutInterval: 300000,

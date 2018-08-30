@@ -1,4 +1,12 @@
+logs/*
+!.gitkeep
 api_tests/node_modules
-e2e_tests/config/tmp
+e2e_tests/config/userRegistration
+e2e_tests/config/removeFromBag
+e2e_tests/config/addToBag
+e2e_tests/config/loginThroughFacebook
+e2e_tests/config/viewMore
+api_tests/report.html
 e2e_tests/config/tmp
 api_tests/report.html
+e2e_tests/config/debug.log
