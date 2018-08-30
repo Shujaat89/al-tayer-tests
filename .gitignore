@@ -1,0 +1,4 @@
+api_tests/node_modules
+e2e_tests/config/tmp
+e2e_tests/config/tmp
+api_tests/report.html

@@ -1,0 +1,27 @@
+{
+    "url":"https://www.nisnass.ae/",
+    "userData":{
+        "firstName":"Test",
+        "lastName":"",
+        "email":"@test.com",
+        "pass":"test123",
+        "phone":"123456789"
+    },
+    "items":{
+        "item1":{
+            "name":"Quench Intense Hydration Mask, 1 sheet",
+            "size":"ONE SIZE",
+            "color":""
+        },
+        "item2":{
+            "name":"Zitah Classic Pumps",
+            "size":"9.5",
+            "color":"Pink"
+        },
+        "item3":{
+            "name":"Metallic Sandals",
+            "size":"39",
+            "color":""
+        }
+    }
+}
