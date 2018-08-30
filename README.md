@@ -1,11 +1,11 @@
-# al-tayer-tests
+# Al-Tayer-tests
 This repo contains some end to end and api tests of Al-tayer's web applications
 
 ## Getting Started
 
 These instructions will let you clone, install and run tests
 
-###Installation
+### Installation
 pull the repo
 
 - install nodejs on your system
@@ -23,13 +23,13 @@ pull the repo
 ```
 - go into directory e2e_tests run npm install
 ```
-###To run api tests
+### To run api tests
 	
 	- cd api_tests
 	```
 	- mocha index.js --timeout=35000 --reporter mocha-simple-html-reporter --reporter-options output=report.html
 	```
-###To run e2e tests
+### To run e2e tests
 
 	- cd e2e_tests/config
 	```
