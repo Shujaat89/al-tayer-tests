@@ -14,25 +14,34 @@ pull the repo
 
 - run following commands from terminal
 
+	```
 	- install protractor using npm install protractor -g (for windows)
+	```
+
 	```
 	- webdriver-manager update
 	```
 
+```
 - go into directory api_tests run npm install
+```
+
 ```
 - go into directory e2e_tests run npm install
 ```
 ### To run api tests
-	
+
+	```
 	- cd api_tests
 	```
-	- mocha index.js --timeout=35000 --reporter mocha-simple-html-reporter --reporter-options output=report.html
 	```
+	- mocha index.js --timeout=35000 --reporter mocha-simple-html-reporter --reporter-options output=report.html
+	
 ### To run e2e tests
 
-	- cd e2e_tests/config
 	```
+	- cd e2e_tests/config
+
 	- protractor conf.js --suite=userRegistration
 	
 	- protractor conf.js --suite=removeFromBag
@@ -45,9 +54,11 @@ pull the repo
 
 - for api tests
 
+	```
 	- root directory of api_tests having name report.html
 	```
 - for e2e tests
 
+	```
 	- e2e_tests/config/tmp/screenshots/report.html
 	```

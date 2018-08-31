@@ -2,11 +2,11 @@
 var globalConfig = require('../config/conf.js');
 var helper = require('../actions/helper.js');
 var ounassMap = require('./actions/map.js');
+var ousnassConfig = require('./config/config.json')
 describe('Facebook Login test',function(){
     it('Open Ounass app and login through facebook',function(){
-        browser.get(config.url); 
-        helper.waitForElementProtractor('Popup button',ounassMap.ounassHomePage.notificationPopupCancelBtn,'id',globalConfig.timeouts.mid_timeout);
-        helper.clickUsingID('Do not allow notifications button',ounassMap.ounassHomePage.notificationPopupCancelBtn,0);
+        browser.get(ousnassConfig.URL); 
+        helper.waitForElementProtractor('Popup button',ounassMap.ounassHomePage.singupPopupCloseBtn,'css',globalConfig.timeouts.mid_timeout);
         helper.clickUsingJsCSSindex('Close button of be the first popup',ounassMap.ounassHomePage.singupPopupCloseBtn,4);
         helper.clickUsingJsCSSindex('add to the bag button',ounassMap.ounassHomePage.registerUserBtn,0);
         helper.waitForElementProtractor('Login with facebook button on login popup',ounassMap.registrationPopup.loginWithFacebookBtn,'css',5000);

@@ -10,3 +10,6 @@ api_tests/report.html
 e2e_tests/config/tmp
 api_tests/report.html
 e2e_tests/config/debug.log
+e2e_tests/config/debug.log
+e2e_tests/config/debug.log
+*.log

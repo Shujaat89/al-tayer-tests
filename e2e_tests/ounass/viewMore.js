@@ -40,7 +40,7 @@ describe('Facebook Login test',function(){
         browser.sleep(globalConfig.timeouts.mid_timeout);
         ounassHelper.checkItemsOnThePage(1);
     });
-    it('PL:7 from two designers',function(){
+    it('PL:7 when Phillip Lim Clothing  and Acler are selected from designer filters then the app should load all items from acler and Phillip Lim Clothing',function(){
         helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.aclerPhillipLink,0); 
         browser.sleep(globalConfig.timeouts.mid_timeout);
         ounassHelper.checkItemsOnThePage(20);
