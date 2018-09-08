@@ -21,7 +21,7 @@ exports.addItemsToTheBag = function(){
         helper.sendKeysByCSS('Searching for '+config.items.item3.name, nisnassMap.homePage.searchBar, config.items.item3.name, 0);
         helper.waitForElementProtractor(config.items.item3.name+' in the list', nisnassMap.homePage.itemInListing, 'css', globalConfig.timeouts.mid_timeout);
         helper.clickByCSSContainingText(config.items.item3.name, nisnassMap.homePage.itemOptionsSearchBar, config.items.item3.name, 1);
-        helper.clickUsingJsCSSindex('Size button', nisnassMap.itemPage.sizeBtn, 3);
+        helper.clickUsingJsCSSindex('Size button', nisnassMap.itemPage.sizeBtn, 1);
         helper.clickByCSS('add to the bag button', nisnassMap.itemPage.addToBagBtn, 0);
         helper.waitForElementProtractor(config.items.item3.name+' added to the bag popup', nisnassMap.itemPage.MiniCart, 'css', globalConfig.timeouts.max_timeout);
 };
