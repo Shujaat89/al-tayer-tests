@@ -33,14 +33,14 @@ describe('Facebook Login test',function(){
         browser.sleep(globalConfig.timeouts.mid_timeout);
         ounassHelper.checkItemsOnThePage(18);
     });
-    it('PL:6 when Ajc is selected from designer filter, the app should load all items from Phillip Lim ',function(){
+    it('PL:6 when Ajc is selected from designer filter, the app should load all items from Ajc ',function(){
         helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.aclerBtn,0);
         browser.sleep(globalConfig.timeouts.mid_timeout);
         helper.clickUsingJsCSSindex('Ajc link in filters',ounassMap.clothingPage.ajcLink,0);
         browser.sleep(globalConfig.timeouts.mid_timeout);
         ounassHelper.checkItemsOnThePage(11);
     });
-    it('PL:7 when Ajc  and Acler are selected from designer filters then the app should load all items from acler and Phillip Lim Clothing',function(){
+    it('PL:7 when Ajc  and Acler are selected from designer filters then the app should load all items from acler and Ajc',function(){
         helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.aclerAjcLink,0); 
         browser.sleep(globalConfig.timeouts.mid_timeout);
         ounassHelper.checkItemsOnThePage(29);
