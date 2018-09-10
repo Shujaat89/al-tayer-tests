@@ -96,7 +96,7 @@ describe('API TESTS', () => {
 			});
 	});
 
-	it.only('should have featureLink at level 3', async () => {
+	it('should have featureLink at level 3', async () => {
 		await rp(url)
 			.then((res) => {
 				let data = JSON.parse(res);
