@@ -31,25 +31,25 @@ describe('Facebook Login test',function(){
     it('PL:5 when Acler is selected from designer filter, the app should load all items from acler',function(){
         helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.aclerLink,0);
         browser.sleep(globalConfig.timeouts.mid_timeout);
-        ounassHelper.checkItemsOnThePage(19);
+        ounassHelper.checkItemsOnThePage(18);
     });
-    it('PL:6 when Phillip Lim is selected from designer filter, the app should load all items from Phillip Lim ',function(){
+    it('PL:6 when Ajc is selected from designer filter, the app should load all items from Phillip Lim ',function(){
         helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.aclerBtn,0);
         browser.sleep(globalConfig.timeouts.mid_timeout);
-        helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.phillipLimLink,0);
+        helper.clickUsingJsCSSindex('Ajc link in filters',ounassMap.clothingPage.ajcLink,0);
         browser.sleep(globalConfig.timeouts.mid_timeout);
-        ounassHelper.checkItemsOnThePage(1);
+        ounassHelper.checkItemsOnThePage(11);
     });
-    it('PL:7 when Phillip Lim Clothing  and Acler are selected from designer filters then the app should load all items from acler and Phillip Lim Clothing',function(){
-        helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.aclerPhillipLink,0); 
+    it('PL:7 when Ajc  and Acler are selected from designer filters then the app should load all items from acler and Phillip Lim Clothing',function(){
+        helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.aclerAjcLink,0); 
         browser.sleep(globalConfig.timeouts.mid_timeout);
-        ounassHelper.checkItemsOnThePage(20);
+        ounassHelper.checkItemsOnThePage(29);
     });
     it('PL:8 When black is selected from colors filters and Acler is selected from designers filter the app should load all black dresses from Acler',function(){
         helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.aclerLink,0); 
         browser.sleep(globalConfig.timeouts.mid_timeout);
         helper.clickUsingJsCSSindex('Acler link in filters',ounassMap.clothingPage.blackAclerLink,0);
         browser.sleep(globalConfig.timeouts.mid_timeout);
-        ounassHelper.checkItemsOnThePage(7);
+        ounassHelper.checkItemsOnThePage(6);
     });
 });

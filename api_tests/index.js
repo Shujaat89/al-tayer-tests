@@ -96,7 +96,7 @@ describe('API TESTS', () => {
 			});
 	});
 
-	it('should have featureLink at level 3', async () => {
+	it.only('should have featureLink at level 3', async () => {
 		await rp(url)
 			.then((res) => {
 				let data = JSON.parse(res);
@@ -105,7 +105,7 @@ describe('API TESTS', () => {
 
 					var regex = RegExp('/edits/*');
 					if (regex.test(obj.featureLink)) {
-						chai.expect(obj.level,'feature link not found for category id '+obj.categoryId).to.be.equal(3);
+						chai.expect(obj.level,'feature link found for category id '+obj.categoryId+' at object level '+obj.level).to.be.equal(3);
 					}
 
 					if (obj.children && obj.children.length) {
